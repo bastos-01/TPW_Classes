@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}Livros{% endblock %}
+
+{% block content %}
+
+    <table>
+        <tr>
+            {% for x in books %}
+                <a href="/livro/{{ x.id }}"><h2>{{ x.title }}</h2></a>
+        </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}

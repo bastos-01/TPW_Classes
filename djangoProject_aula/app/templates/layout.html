@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load static %}
+    <link rel="stylesheet" href="{% static "content/style.css" %}" />
+    <meta charset="UTF-8">
+    <title>{% block title %}Base{% endblock %}</title>
+    {% include 'loginpartial.html' %}
+</head>
+<body>
+{% block content%}{% endblock %}
+</body>
+</html>

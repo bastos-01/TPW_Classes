@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Animal_1 = require("./Animal");
+var Animal_2 = require("./Animal");
+var d = new Animal_2.Dog("dentro do daniel", "danielito", "aunaunaun");
+console.log(d.talk());
+console.log(d.show());
+console.log(Animal_2.Dog.nCanines);
+var c = new Animal_1.Cat("casa do daniel", "persa", "gil", "bxbxbxbx");
+console.log(c.talk());
+console.log(c.show());

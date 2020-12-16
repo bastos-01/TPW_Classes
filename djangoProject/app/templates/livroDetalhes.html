@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}Detalhes do livro{% endblock %}
+
+{% block content %}
+
+    <table>
+        <tr>
+            <h1>Título do livro</h1>
+            <h3>{{ book.title}}</h3>
+            <h1>Autor do livro</h1>
+            {% for x in book.authors.all %}
+            <h3>{{ x.name }}</h3>
+            {% endfor %}
+            <h1>Editora</h1>
+            <h3>{{ book.publisher }}</h3>
+            <h1>Data de publicação</h1>
+            <h3>{{ book.date }}</h3>
+        </tr>
+    </table>
+
+{% endblock %}
